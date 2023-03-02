@@ -1,0 +1,7 @@
+set terminal png
+set style data lines
+set xlabel "Time (seconds)"
+set xlabel "packets/s"
+plot [00:60] "TCP" using 1:2 title "ARP",\
+	      "TCP" using 1:3 title "TCP",\
+	      "TCP" using 1:4 title "UDP"
